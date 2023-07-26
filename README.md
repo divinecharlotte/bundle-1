@@ -12,7 +12,6 @@
 
 ## the log of the above I did
 
-Last login: Sun May 14 15:13:28 on console
 admin-MacBook-Pro: cd Desktop/
 admin-MacBook-Pro:Desktop cd gym/
 admin-MacBook-Pro:gym git clone https://github.com/divinecharlotte/bundle-1.git
@@ -77,3 +76,4 @@ admin-MacBook-Pro:bundle-1 $ git branch
   admin-MacBook-Pro:bundle-1 $ git branch
 - dev
   main
+
