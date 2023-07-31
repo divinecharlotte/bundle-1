@@ -113,3 +113,28 @@ To https://github.com/divinecharlotte/bundle-1.git
  * [new branch]      ft/contact-page -> ft/contact-page
 admin-MacBook-Pro:bundle-1 andela$
 ```
+
+admin-MacBook-Pro:bundle-1 andela$ git commit -m "solve conflicts locally"
+[ft/service-redesign b231b48] solve conflicts locally
+admin-MacBook-Pro:bundle-1 andela$ git push ft/service-redesign
+fatal: 'ft/service-redesign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+admin-MacBook-Pro:bundle-1 andela$ git push origin ft/service-rede
+sign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/divinecharlotte/bundle-1.git
+d7fc279..b231b48 ft/service-redesign -> ft/service-redesign
+admin-MacBook-Pro:bundle-1 andela$
+
+```
+
+```
