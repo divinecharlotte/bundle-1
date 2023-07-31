@@ -134,11 +134,7 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/divinecharlotte/bundle-1.git
 d7fc279..b231b48 ft/service-redesign -> ft/service-redesign
 admin-MacBook-Pro:bundle-1 andela$
-<<<<<<< HEAD
 
 ```
 
 ```
-=======
-````
->>>>>>> parent of 3593162... bundle 3 exercercise 1 logs in the readme
