@@ -235,3 +235,64 @@ To https://github.com/divinecharlotte/bundle-1.git
    d7fc279..b231b48  ft/service-redesign -> ft/service-redesign
 admin-MacBook-Pro:bundle-1 andela$
 ````
+
+## BUNDLE3-LOG
+
+```
+bash: no job control in this shell
+admin-MacBook-Pro:bundle-1 andela$ git log --oneline
+admin-MacBook-Pro:bundle-1 andela$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+admin-MacBook-Pro:bundle-1 andela$ git add .
+admin-MacBook-Pro:bundle-1 andela$ git commit -m "bundle 3 exercercise 1"
+[ft/team-page 13ba4dd] bundle 3 exercercise 1
+1 file changed, 11 insertions(+)
+admin-MacBook-Pro:bundle-1 andela$ git push origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 407 bytes | 407.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote: https://github.com/divinecharlotte/bundle-1/pull/new/ft/team-page
+remote:
+To https://github.com/divinecharlotte/bundle-1.git
+
+- [new branch] ft/team-page -> ft/team-page
+  admin-MacBook-Pro:bundle-1 andela$ git checkout main
+  Switched to branch 'main'
+  Your branch is up to date with 'origin/main'.
+  admin-MacBook-Pro:bundle-1 andela$ git checkout -b ft/contact-page
+  Switched to a new branch 'ft/contact-page'
+  admin-MacBook-Pro:bundle-1 andela$ git checkout ft/team-page
+  Switched to branch 'ft/team-page'
+
+
+ ** admin-MacBook-Pro:bundle-1 andela$ git log --oneline
+
+
+13ba4dd (HEAD -> ft/team-page, origin/ft/team-page) bundle 3 exercercise 1
+44248fc (origin/ft/service-redesign, ft/service-redesign) solve conflicts locally
+b231b48 solve conflicts locally
+e0273ea (origin/main, origin/HEAD, main, ft/contact-page) bundle2 exercise2 part2
+d7fc279 bundle2 exercise2
+1945d2f bundle2 exercise2
+2850839 Merge pull request #2 from divinecharlotte/ft/bundle-2
+4605e72 (origin/ft/bundle-2, ft/bundle-2) solve bundle exercise 1
+f946f8c Merge pull request #1 from divinecharlotte/dev
+98e7649 (origin/dev) Merge branch 'main' into dev
+1981385 (dev) do bundle1 exercise2
+3dd4a20 do bundle1 exercise2
+25d86c7 update the log of all I did
+f632257 update the log of all I did
+ade8b79 solve bundle1 excercise
+1df25a0 Initial commit
+
+```
+
+```
+
+```
