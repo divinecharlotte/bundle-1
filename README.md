@@ -77,3 +77,39 @@ admin-MacBook-Pro:bundle-1 $ git branch
 - dev
   main
 
+### CHERRYPICKING:
+
+```
+admin-MacBook-Pro:bundle-1 andela$ git cherry-pick e0273ea
+On branch ft/contact-page
+You are currently cherry-picking commit e0273ea.
+
+nothing to commit, working tree clean
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git reset'
+admin-MacBook-Pro:bundle-1 andela$ git add .
+admin-MacBook-Pro:bundle-1 andela$ git commit -m "bundle 3 exercercise 1 cherry commang"
+[ft/contact-page c871852] bundle 3 exercercise 1 cherry commang
+ Date: Fri Jul 28 15:22:22 2023 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+admin-MacBook-Pro:bundle-1 andela$ git push origin ft/contact-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 442 bytes | 442.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/divinecharlotte/bundle-1/pull/new/ft/contact-page
+remote:
+To https://github.com/divinecharlotte/bundle-1.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+admin-MacBook-Pro:bundle-1 andela$
+```
