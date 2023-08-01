@@ -138,3 +138,77 @@ admin-MacBook-Pro:bundle-1 andela$
 ```
 
 ```
+
+### BUNDLE3EXERCESISE2
+
+```
+
+admin-MacBook-Pro:bundle-1 andela$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+admin-MacBook-Pro:bundle-1 andela$ git checkout -b ft/faq-page
+Switched to branch 'ft/faq-page'
+admin-MacBook-Pro:bundle-1 andela$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+admin-MacBook-Pro:bundle-1 andela$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+admin-MacBook-Pro:bundle-1 andela$ git add .
+admin-MacBook-Pro:bundle-1 andela$ git commit -m "bundle 3 exercesise2"
+[main 46f1119] bundle 3 exercesise2
+ 1 file changed, 11 insertions(+)
+admin-MacBook-Pro:bundle-1 andela$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+admin-MacBook-Pro:bundle-1 andela$ git rebase main
+First, rewinding head to replay your work on top of it...
+Applying: bundle 3 exercercise 1 cherry commang
+Applying: bundle 3 exercercise 1 cherry commanD
+Applying: bundle 3 exercercise 1 faq page
+Applying: Revert "bundle2 exercise2 part2"
+Applying: solve conflicts
+Applying: solve conflicts
+Applying: Revert "bundle2 exercise2 part2"
+Applying: add team page
+Using index info to reconstruct a base tree...
+M       team.html
+Falling back to patching base and 3-way merge...
+Auto-merging team.html
+CONFLICT (content): Merge conflict in team.html
+error: Failed to merge in the changes.
+Patch failed at 0008 add team page
+hint: Use 'git am --show-current-patch' to see the failed patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+
+admin-MacBook-Pro:bundle-1 andela$ git add .
+admin-MacBook-Pro:bundle-1 andela$ git commit -m "bundle 3 exercesise2"
+rebase in progress; onto 46f1119
+You are currently rebasing branch 'ft/home-page-redesign' on '46f1119'.
+
+nothing to commit, working tree clean
+admin-MacBook-Pro:bundle-1 andela$ git rebase --continue
+Applying: add team page
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+admin-MacBook-Pro:bundle-1 andela$ git rebase --skip
+admin-MacBook-Pro:bundle-1 andela$ git add .
+admin-MacBook-Pro:bundle-1 andela$ git commit -m "bundle 3 exercesise2"
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+admin-MacBook-Pro:bundle-1 andela$ git push origin ft/home-page-redesign
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (22/22), 2.89 KiB | 985.00 KiB/s, done.
+Total 22 (delta 15), reused 0 (delta 0)
+remote: Resolving deltas: 100% (15/15), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/divinecharlotte/bundle-1/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/divinecharlotte/bundle-1.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+admin-MacBook-Pro:bundle-1 andela$
+```
