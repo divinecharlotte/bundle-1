@@ -77,3 +77,146 @@ admin-MacBook-Pro:bundle-1 $ git branch
 - dev
   main
 
+### CHERRYPICKING:
+
+```
+admin-MacBook-Pro:bundle-1 andela$ git cherry-pick e0273ea
+On branch ft/contact-page
+You are currently cherry-picking commit e0273ea.
+
+nothing to commit, working tree clean
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git reset'
+admin-MacBook-Pro:bundle-1 andela$ git add .
+admin-MacBook-Pro:bundle-1 andela$ git commit -m "bundle 3 exercercise 1 cherry commang"
+[ft/contact-page c871852] bundle 3 exercercise 1 cherry commang
+ Date: Fri Jul 28 15:22:22 2023 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+admin-MacBook-Pro:bundle-1 andela$ git push origin ft/contact-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 442 bytes | 442.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/divinecharlotte/bundle-1/pull/new/ft/contact-page
+remote:
+To https://github.com/divinecharlotte/bundle-1.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+admin-MacBook-Pro:bundle-1 andela$
+```
+
+````
+Switched to branch 'ft/service-redesign'
+admin-MacBook-Pro:bundle-1 andela$ git diff main
+diff --git a/README.md b/README.md
+index 341230b..84229e7 100644
+--- a/README.md
++++ b/README.md
+@@ -77,3 +77,54 @@ admin-MacBook-Pro:bundle-1 $ git branch
+ - dev
+   main
+
++```
++bash: no job control in this shell
++admin-MacBook-Pro:bundle-1 andela$ git checkout -b ft/bundle-2
++Switched to a new branch 'ft/bundle-2'
++admin-MacBook-Pro:bundle-1 andela$ git add .
++admin-MacBook-Pro:bundle-1 andela$ git commit -m "solve bundle exercise 1"
++[ft/bundle-2 4605e72] solve bundle exercise 1
++ 1 file changed, 11 insertions(+)
++ create mode 100644 services.html
++admin-MacBook-Pro:bundle-1 andela$ git push origin ft/bundle-2
++Enumerating objects: 15, done.
++admin-MacBook-Pro:bundle-1 andela$ git checkout main
++Switched to branch 'main'
++Your branch is up to date with 'origin/main'.
++admin-MacBook-Pro:bundle-1 andela$ git pull
++remote: Enumerating objects: 12, done.
++remote: Counting objects: 100% (11/11), done.
++remote: Compressing objects: 100% (6/6), done.
++remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
++Unpacking objects: 100% (6/6), done.
++From https://github.com/divinecharlotte/bundle-1
++   3dd4a20..2850839  main       -> origin/main
++   1981385..98e7649  dev        -> origin/dev
++Updating 3dd4a20..2850839
++Fast-forward
++ README.md     |  3 +--
++ services.html | 11 +++++++++++
++ 2 files changed, 12 insertions(+), 2 deletions(-)
++ create mode 100644 services.html
++admin-MacBook-Pro:bundle-1 andela$ git checkout -b ft/service-redesign
++Switched to a new branch 'ft/service-redesign'
++admin-MacBook-Pro:bundle-1 andela$ git add .
++admin-MacBook-Pro:bundle-1 andela$ git commit -m "bundle2 exercise2"
++[ft/service-redesign 1945d2f] bundle2 exercise2
++ 1 file changed, 1 insertion(+), 1 deletion(-)
++admin-MacBook-Pro:bundle-1 andela$ git push origin ft/service-redesign
++Enumerating objects: 5, done.
++Counting objects: 100% (5/5), done.
++Delta compression using up to 4 threads
++Compressing objects: 100% (3/3), done.
++Writing objects: 100% (3/3), 328 bytes | 328.00 KiB/s, done.
++Total 3 (delta 2), reused 0 (delta 0)
++remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
++remote:
++remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
++remote:      https://github.com/divinecharlotte/bundle-1/pull/new/ft/service-redesign
++remote:
++To https://github.com/divinecharlotte/bundle-1.git
++ * [new branch]      ft/service-redesign -> ft/service-redesign
++admin-MacBook-Pro:bundle-1 andela$
++```
+diff --git a/services.html b/services.html
+index c097217..a44ec5b 100644
+--- a/services.html
++++ b/services.html
+@@ -6,6 +6,6 @@
+     <title>service</title>
+ </head>
+ <body>
+-    <p>service content</p>
++    <p>content</p>
+ </body>
+ </html>
+\ No newline at end of file
+(END)
+
+
+
+bash: no job control in this shell
+admin-MacBook-Pro:bundle-1 andela$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+admin-MacBook-Pro:bundle-1 andela$ git add .
+admin-MacBook-Pro:bundle-1 andela$ git commit -m "solve conflicts locally"
+[ft/service-redesign b231b48] solve conflicts locally
+admin-MacBook-Pro:bundle-1 andela$ git push ft/service-redesign
+fatal: 'ft/service-redesign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+admin-MacBook-Pro:bundle-1 andela$ git push origin ft/service-rede
+sign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/divinecharlotte/bundle-1.git
+   d7fc279..b231b48  ft/service-redesign -> ft/service-redesign
+admin-MacBook-Pro:bundle-1 andela$
+````
